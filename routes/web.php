@@ -26,4 +26,7 @@ Route::get('/prueba', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', function () {
+    return view('home');
+    // Solo los usuarios autenticados pueden acceder aquí
+})->middleware('auth')->name('adminView');
