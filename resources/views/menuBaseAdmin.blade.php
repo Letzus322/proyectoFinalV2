@@ -257,7 +257,7 @@
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a  id="profesores-link" class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="" href="">
+        <a  id="profesores-link" class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="" href="{{ route('profesores') }}">
           <i class="bi bi-menu-button-wide"></i><span>Profesores</span>
         </a>
         

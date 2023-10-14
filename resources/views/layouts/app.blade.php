@@ -34,7 +34,8 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
 
 </script>
-<link rel ="stylesheet" href ="{{asset('style.css')}}">
+
+
 <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 <link href="{{ asset('vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
 <link href="{{ asset('vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
@@ -42,6 +43,8 @@
 <link href="{{ asset('vendor/quill/quill.bubble.css') }}" rel="stylesheet">
 <link href="{{ asset('vendor/remixicon/remixicon.css') }}" rel="stylesheet">
 <link href="{{ asset('vendor/simple-datatables/style.css') }}" rel="stylesheet">
+<link rel ="stylesheet" href ="{{asset('style.css')}}">
+
 
 
 
