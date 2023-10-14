@@ -39,3 +39,6 @@ Route::get('/profesores', function () {
 })->name('profesores')->middleware('auth');
 
 Route::get('/profesores', [App\Http\Controllers\UserController::class, 'mostrarDatos'])->name('profesores')->middleware('auth');
+
+Route::post('/registerPropio', [App\Http\Controllers\CustomRegisterController2::class, 'register'])->name('registerPropio');
+
