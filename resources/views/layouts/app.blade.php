@@ -52,7 +52,6 @@
 
 
 <script src="{{ asset('vendor/apexcharts/apexcharts.min.js') }}"></script>
-<script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('vendor/chart.js/chart.umd.js') }}"></script>
 <script src="{{ asset('vendor/echarts/echarts.min.js') }}"></script>
 <script src="{{ asset('vendor/quill/quill.min.js') }}"></script>
