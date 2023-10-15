@@ -34,6 +34,7 @@ class SemestreCursoDocenteController extends Controller
             'semestre_id' => $request->semestre_id,
             'curso_id' => $request->curso_id,
             'docente_id' => $request->docente_id,
+            'Acreditacion'=> $request->Acreditacion,
             // Otros campos que desees guardar
         ]);
 

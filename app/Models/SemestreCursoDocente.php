@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class SemestreCursoDocente extends Model
 {
     protected $table = 'semestre_curso_docente';
-    protected $fillable = ['semestre_id', 'curso_id', 'docente_id'];
+    protected $fillable = ['semestre_id', 'curso_id', 'docente_id','Acreditacion'];
 
     public function semestre()
     {

@@ -2,5 +2,6 @@
     @include('adminSession')
 
 @elseif (Auth::user()->type == 0)
-    @include('normalSession')
+    @include('normalSesion')
+
 @endif

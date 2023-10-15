@@ -8,7 +8,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
   <div class="d-flex align-items-center justify-content-between">
-  <a href="{{ route('adminView') }}" class="logo d-flex align-items-center">
+  <a href="{{ route('normalSesion') }}" class="logo d-flex align-items-center">
   <img src="{{ asset('universidadlogo.png') }}" alt="Logo de la Empresa" class="img-fluid logo-img" style="max-width: 100px;"> <!-- Agrega esta línea -->
 
     <span class="d-none d-lg-block">Informática</span>
@@ -250,28 +250,28 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a id="dashboard-link" class="nav-link collapsed " href="{{ route('adminView') }}">
+        <a id="dashboard-link" class="nav-link collapsed " href="{{ route('normalSesion') }}">
           <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
+          <span>Cursos </span>
         </a>
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a  id="profesores-link" class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="" href="{{ route('profesores') }}">
-          <i class="bi bi-menu-button-wide"></i><span>Profesores</span>
+        <a  id="profesores-link" class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="" href="">
+          <i class="bi bi-menu-button-wide"></i><span>Aun</span>
         </a>
         
       </li><!-- End Components Nav -->
 
       <li class="nav-item">
-        <a id="cursos-link" class="nav-link collapsed" href="{{ route('cursos') }}">
-          <i class="bi bi-journal-text"></i><span>Cursos</span>
+        <a id="cursos-link" class="nav-link collapsed" href="">
+          <i class="bi bi-journal-text"></i><span>Aun</span>
         </a>
  
       </li><!-- End Forms Nav -->
 
       <li class="nav-item">
-        <a  id="carga-link" class="nav-link collapsed" href="{{ route('semestres') }}">
+        <a  id="carga-link" class="nav-link collapsed" href="">
           <i class="bi bi-layout-text-window-reverse"></i><span>Semestres</span>
         </a>
       </li><!-- End Tables Nav -->

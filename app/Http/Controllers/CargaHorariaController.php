@@ -37,7 +37,7 @@ class CargaHorariaController extends Controller
         $data = SemestreCursoDocente::with(['semestre', 'curso', 'docente'])
             ->join('cursos', 'semestre_curso_docente.curso_id', '=', 'cursos.id')
             ->join('users', 'semestre_curso_docente.docente_id', '=', 'users.id')
-            ->select('cursos.id', 'cursos.NombreCurso', 'cursos.MallaCurricular', 'users.name as NombreDocente')
+            ->select('cursos.id', 'cursos.NombreCurso', 'cursos.MallaCurricular', 'users.name as NombreDocente','Acreditacion')
             ->where('semestre_curso_docente.semestre_id', $semestreId)
             ->get();
     

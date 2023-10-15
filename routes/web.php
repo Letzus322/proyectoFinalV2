@@ -15,15 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('auth.login');
-});
+})->name('login');
 
 
 Auth::routes();
 
-Route::get('/adminSession', function () {
-    return view('auth.adminSession');
-    // Solo los usuarios autenticados pueden acceder aquí
-})->middleware('auth');
+
+
 Route::get('/home', function () {
     return view('home');
     // Solo los usuarios autenticados pueden acceder aquí
@@ -46,3 +44,19 @@ Route::post('/registerPropio', [App\Http\Controllers\CustomRegisterController2::
 Route::get('/cursos', [App\Http\Controllers\CursosController::class, 'index'])->name('cursos')->middleware('auth');
 
 Route::post('/cursos', [App\Http\Controllers\CursosController::class, 'store'])->name('cursos.store')->middleware('auth');
+
+
+Route::get('/semestres', [App\Http\Controllers\Semestrecontroller::class, 'index'])->name('semestres')->middleware('auth');
+
+Route::post('/semestres', [App\Http\Controllers\Semestrecontroller::class, 'store'])->name('semestres.store')->middleware('auth');
+Route::get('/cargaHoraria/{semestreId}', [App\Http\Controllers\CargaHorariaController::class, 'index'])->name('carga')->middleware('auth');
+Route::post('/cargaHoraria/{semestreId}', [App\Http\Controllers\SemestreCursoDocenteController::class, 'store'])->name('semestres_curso_docente.store')->middleware('auth');
+
+Route::get('/adminSession', function () {
+    return view('adminSession');
+})->middleware('auth')->name('admin');
+
+Route::get('/normalSesion', [App\Http\Controllers\NormalSesionController::class, 'index'])->name('normalSesion')->middleware('auth');
+
+
+Route::get('/semestreDocente/{semestreId}', [App\Http\Controllers\SemestreDocenteController::class, 'index'])->name('semestreDocente')->middleware('auth');

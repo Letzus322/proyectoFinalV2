@@ -26,8 +26,19 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
 
+     protected function redirectTo()
+     {
+         if (auth()->user()->type == 1) {
+             return route('admin'); // Ruta para administradores
+         } elseif (auth()->user()->type == 0) {
+             return route('normalSesion'); // Ruta para usuarios normales
+         }
+ 
+         // Por defecto, redirige a la ruta HOME
+         return  route('login');
+
+     }
     /**
      * Create a new controller instance.
      *
