@@ -42,3 +42,7 @@ Route::get('/profesores', [App\Http\Controllers\UserController::class, 'mostrarD
 
 Route::post('/registerPropio', [App\Http\Controllers\CustomRegisterController2::class, 'register'])->name('registerPropio');
 
+
+Route::get('/cursos', [App\Http\Controllers\CursosController::class, 'index'])->name('cursos')->middleware('auth');
+
+Route::post('/cursos', [App\Http\Controllers\CursosController::class, 'store'])->name('cursos.store')->middleware('auth');

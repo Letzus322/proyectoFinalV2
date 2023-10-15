@@ -264,7 +264,7 @@
       </li><!-- End Components Nav -->
 
       <li class="nav-item">
-        <a id="cursos-link" class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="">
+        <a id="cursos-link" class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="{{ route('cursos') }}">
           <i class="bi bi-journal-text"></i><span>Cursos</span>
         </a>
  
